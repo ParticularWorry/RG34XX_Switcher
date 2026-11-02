@@ -79,9 +79,3 @@ RG34XXSwitcher/
 Copy `RG34XXSwitcher.muxapp` to the device's **ARCHIVE** folder and install it through the MustardOS **Archive Manager**. Reboot the device after applying display timing changes.
 
 > **Warning:** The application writes to the SD card's boot area. It was tested on an **RG34XX-H with MustardOS Andromeda 2606.0**. Make a full SD card backup before using it. Other firmware versions and RG34XX variants (including SP models) are not verified and may require changes to the code.
-
-## Notes
-
-- Do not commit `rg34xx-tool`, `build/`, or `*.muxapp` to Git; attach the `.muxapp` to a **GitHub Release** instead.
-- The Dockerfile supplies the ARM64 cross-compiler and SDL2 development libraries.
-- These commands describe the project's existing flat source layout. The build should be tested on the target device before publishing a release.
