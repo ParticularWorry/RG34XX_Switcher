@@ -1,0 +1,9 @@
+# Compiled binaries
+rg34xx-tool
+*.o
+
+# Release packages
+*.muxapp
+
+# Local archives
+_archive/
